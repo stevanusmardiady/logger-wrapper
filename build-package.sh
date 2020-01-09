@@ -15,7 +15,7 @@ echo "---------------------------------------------"
 echo "Increment the build number for each build"
 export BUILD_NUMBER=$(($BUILD_NUMBER+1))
 echo "$BUILD_NUMBER" > $PROJECT_DIR/build_conf/BUILD_NUMBER
-echo "(Inc) Build Number: $BUILD_NUMBER"
+echo "(Inc) Build Number : $BUILD_NUMBER"
 
 echo "---------------------------------------------"
 echo "Trigger conda build process"
