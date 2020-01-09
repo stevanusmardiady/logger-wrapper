@@ -23,7 +23,7 @@ cp $CONDA_BUILD_DIR/$PACKAGE_NAME-$VERSION_NUMBER.$BUILD_NUMBER* $CONDA_REPO_DIR
 conda index $CONDA_REPO_DIR
 
 # Push build number back to git
-echo "Sync with git and push build number back to git"
-git add .
-git commit -m "Build package -> increment build number to $BUILD_NUMBER"
-git push origin master
+# echo "Sync with git and push build number back to git"
+# git add .
+# git commit -m "Build package -> increment build number to $BUILD_NUMBER"
+# git push origin master
