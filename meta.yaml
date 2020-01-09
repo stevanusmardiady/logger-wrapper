@@ -1,0 +1,18 @@
+{% set data = load_setup_py_data(from_recipe_dir=True) %}
+
+package:
+  name: {{ data.get('name') }}
+  version: {{ data.get('version') }}
+
+source:
+  path: /opt/hadoop/miniconda3/envs/logger-wrapper-conda/src/logger-wrapper
+
+build:
+  number: {{ data.get('version') }}
+  script: python3 setup.py install
+
+requirements:
+  host:
+    - python
+  run:
+    - python
