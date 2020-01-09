@@ -7,9 +7,9 @@ echo "Load build number & version number from file"
 export BUILD_NUMBER=$(cat build_conf/BUILD_NUMBER)
 export VERSION_NUMBER=$(cat build_conf/VERSION_NUMBER)
 export PACKAGE_NAME=$(cat build_conf/PACKAGE_NAME)
-echo "Build Number 		: $BUILD_NUMBER"
-echo "Version Number 	: $VERSION_NUMBER"
-echo "Package Name 		: $BUILD_NUMBER"
+echo "Build Number : $BUILD_NUMBER"
+echo "Version Number : $VERSION_NUMBER"
+echo "Package Name : $BUILD_NUMBER"
 
 echo "---------------------------------------------"
 echo "Increment the build number for each build"
@@ -25,8 +25,8 @@ echo "---------------------------------------------"
 echo "Copy conda build artefact to private repo directory"
 export CONDA_BUILD_DIR=$(cat build_conf/CONDA_BUILD_DIR)
 export CONDA_REPO_DIR=$(cat build_conf/CONDA_REPO_DIR)
-echo "Conda Build Dir 	: $CONDA_BUILD_DIR"
-echo "Conda Repo Dir 	: $CONDA_REPO_DIR"
+echo "Conda Build Dir : $CONDA_BUILD_DIR"
+echo "Conda Repo Dir : $CONDA_REPO_DIR"
 
 echo "---------------------------------------------"
 echo "Copying all files under $CONDA_BUILD_DIR/$PACKAGE_NAME-$VERSION_NUMBER.$BUILD_NUMBER* into $CONDA_REPO_DIR"
