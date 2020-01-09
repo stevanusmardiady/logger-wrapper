@@ -5,7 +5,7 @@ package:
   version: {{ data.get('version') }}
 
 source:
-  path: /opt/hadoop/miniconda3/envs/logger-wrapper-conda/src/logger-wrapper
+  path: .
 
 build:
   number: {{ data.get('version') }}
